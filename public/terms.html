@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral">
+    <style>
+        html,body {
+            height: 100%;
+        }
+        body {
+            font-family: 'Spectral';
+        }
+    </style>
+</head>
+
+
+<body class="bg-white dark:bg-slate-800 flex flex-col w-full h-full">
+    <div class="grow">
+        <div class="relative isolate px-6 pt-14 lg:px-8">
+            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 flex flex-col justify-center items-center">
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">Dermsnap
+                    </h1>
+                    <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-200">
+                        Dermsnap is a web application that allows users to upload images of their skin and receive a
+                        diagnosis from a dermatologist.
+                        The application is not intended to replace a visit to a dermatologist, but rather to provide a
+                        preliminary diagnosis.
+                        The application is not intended to be used for medical emergencies.
+                        If you are experiencing a medical emergency, please call 911 or visit your nearest emergency
+                        room.
+                    </p>
+                </div>
+                <a href="index.html" class="text-sm font-semibold leading-6 text-slate-900 dark:text-white mt-6">
+                    <span aria-hidden="true">&larr;</span> Home</a>
+            </div>
+        </div>
+    </div>
+    <footer class="shrink-0 p-16">
+        <hr class="border-none h-[1px] mt-10 w-full bg-gray-100 dark:bg-gray-800">
+        <div class="flex flex-wrap items-start mx-auto w-full">
+            <div class="lg:flex-row lg:justify-between flex flex-col items-center justify-center font-normal text-gray-600 dark:text-white"
+                style="flex:1 0 100%">
+                <div
+                    class="md:flex md:justify-center md:space-y-0 md:space-x-12 lg:mb-0 lg:order-2 mb-8 space-y-6 text-center">
+                    <a class="block text-sm hover:opacity-[65%]" href="/trust">Trust Center</a>
+                    <a class="block text-sm hover:opacity-[65%]" href="/privacy-policy">Privacy Policy</a>
+                    <a class="block text-sm hover:opacity-[65%]" href="#">Status</a>
+                    <a class="block text-sm hover:opacity-[65%]" href="/legal">Legal</a>
+                    <a class="block text-sm hover:opacity-[65%]" href="/ccpa-opt-out">Do Not Sell My Info</a>
+                </div>
+                <div class="lg:mb-0 lg:order-3 flex gap-6 mb-12">Social Links</div>
+                <div class="lg:order-1 flex items-center space-x-6 text-center">
+                    <div class="text-sm text-gray-600 dark:text-white">© <!-- --><span id="year"></span><!-- --> Dermsnap</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript">
+    document.getElementById("year").innerHTML = new Date().getFullYear().toString();
+</script>
+</html>
