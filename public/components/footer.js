@@ -13,7 +13,7 @@ class Footer extends HTMLElement {
                 style="flex:1 0 100%">
                 <div class="md:flex md:justify-center md:space-y-0 md:space-x-12 lg:mb-0 lg:order-2 mb-8 space-y-6 text-center">
                     <a class="block text-sm hover:opacity-[65%]" href="terms.html">Terms</a>
-                    <a class="block text-sm hover:opacity-[65%]" href="#">Status</a>
+                    <a class="block text-sm hover:opacity-[65%]" href="faq.html">FAQ</a>
                     <a class="block text-sm hover:opacity-[65%]" href="mailto:hello@dermsnap.io">Contact Us</a>
                 </div>
                 <div class="lg:mb-0 lg:order-3 flex gap-6 mb-12">Made with &hearts;</div>
